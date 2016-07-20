@@ -1,0 +1,30 @@
+{
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-runtime",
+        "react-hot-loader/babel"
+      ],
+      "presets": ["es2015-webpack", "react", "stage-0"]
+    },
+    "production": {
+      "plugins": [
+        "lodash",
+        "transform-runtime",
+      ],
+      "presets": ["es2015-webpack", "react", "stage-0"]
+    },
+    "AVA" : {
+      "presets": ["es2015", "stage-0", "react"],
+      "plugins": [
+        [
+          "babel-plugin-webpack-loaders",
+          {
+            "config": "/Users/jc0362/Nexusguard/wafpanel/client/webpack.config.ava.js",
+            "verbose": false
+          }
+        ]
+      ]
+    }
+  }
+}
